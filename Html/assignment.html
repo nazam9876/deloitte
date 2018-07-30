@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<title>Form</title>
+<body>
+<h1>Fill the Form</h1>
+<table border="1">
+<col width="150"><col width="250">
+<form action="register">
+<tr>
+<td height="35"><b>ID</b></td><td> <input type="text" name="id" required pattern
+="([A-Z]+)[0-9]{6}" value="" title="ID should start with a capital letter followed by 6 digits" value=""/></td><br></tr>
+<tr>
+<td height="35"><b>Name</b></td> <td><input type="text" name="name" required pattern="[A-Z]+[a-z]*" title="Name should start with a capital letter"
+value=""/></td></tr>
+<tr>
+<td height="35"><b>Age</b></td> <td><input type="number" size="3" name="age" min="18" max="60" value="" placeholder="18"/></td></tr>
+<tr>
+<td height="35"><b>Gender</b></td> <td><input type="radio" name="gender" value="Male"/>Male
+                <input type="radio" name="gender" value="Female"/>Female</td></tr>
+<tr>
+<td height="35"><b>Mobile</b></td><td><input type="text name="mobile" value="" required pattern="([7-9])+[0-9]{9}"
+title="Number should be 10 digits and should start with 7,8 or 9"/></td></tr>
+<tr>
+<td height="35"><b>Location</b></td> <td> <select name="location">
+                         <option value="Mumbai"/>Mumbai</option>
+                         <option value="Pune"/>Pune</option>
+			 <option value="Hyderabad"/>Hyderabad</option>
+			 <option value="Bangalore"/>Bangalore</option>
+			 <option value="Noida"/>Noida</option>
+                      </select></td></tr>
+<tr>
+<td height="35"></td><td><input type="submit" value="SUBMIT"/></td></tr>
+</table>
+</form>		  
+</body>
+</html>
